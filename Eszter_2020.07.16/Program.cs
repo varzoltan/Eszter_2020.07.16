@@ -59,9 +59,14 @@ namespace Eszter_2020._07._16
             //- Írja ki a program a páros elemeket, de a 0-át ne tartalmazza! (házi feladat)
             for (int i = 0; i < paros_szamok.Length; i++)
             {
-                Console.Write($"{paros_szamok[i]} ");
+                if (paros_szamok[i] != 0)
+                {
+                    Console.Write($"{paros_szamok[i]} ");
+                }               
             }
             Console.WriteLine($"A tömbben lévő páros számok darabszáma: {m}");
+
+            
             Console.ReadKey();
         }
     }
